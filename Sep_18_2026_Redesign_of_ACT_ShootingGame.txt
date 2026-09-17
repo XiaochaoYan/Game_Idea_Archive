@@ -1,0 +1,42 @@
+For shooting game
+
+1.后坐力系统需要重制
+可以采取手部耐力系统，每次射击消耗手部耐力。如果耐力耗尽即使Controled Short burst 也不能再保证精度。
+理想的状态 手枪弹/中间威力弹 可以连续发射3~5个弹夹的子弹，但是全威力弹全自动发射 可能只能连续发射2~3个弹夹子弹 就需要强制在掩体后恢复手部耐力。
+同时小口径武器可以维持更长的点射。
+
+连续射击不再有Camera kick，只是在逐渐增加 子弹的Dispersion Cone。这个Cone的中心在屏幕中心点正上方或者上面偏左右。
+
+2.弹道系统需要重置
+不能再采用CoD式 CS式的Ray cast，战地式的Deviation 系统也不够好。
+子弹每飞行一段时间 增加一定偏角，这样可以保证绝大部分口径的弹药在近距离有高精度，同时 手枪弹-中间威力弹药-全威力弹药 可以在弹道上做出区分。
+
++ 战斗系统更符合直觉/拟真
+- 网络同步会是一个更加麻烦但可以解决的问题
+
+最终的4个平衡维度
+1.Accuracy / Time to Travel / Bullet speed
+2.Muzzle energy / Energy at arrival
+3.Ergo / Recoil
+4.ultility / silence / inciderary round
+
+SMG / Pistol - Easy to handle / Lose energy and accuracy for movement player / stealth player
+Intermediate round - balanced overall
+Full power round - Worst recoil | Subsonic round - still accurate and devastating at long range, but need immense skill / luck to hit 
+
+This should be intuitive and balanced for players if I get level design right. BTW this is not for the MMO but just thought experiment on FPS design.
+
+For Action game / Soulslike game
+1.翻滚系统可以重做
+翻滚不应该提供无敌帧，而是提供高额的减伤和韧性加成。
+
+2.韧性系统可以重做
+以魂1的常时韧性 + 大小硬直系统为基板
+总韧性分为 人物韧性+武器韧性
+人物韧性 - 和防具挂钩
+武器韧性 - 和武器+招式挂钩 只在武器已经出手时有用，武器攻击抬手后摇是无效
+
+理想情况 直剑和特大剑同等装甲拼刀
+1.直剑在特大剑抬手时任意招式命中 特大剑硬直 直剑继续出招
+2.直剑斜斩/直刺在特大剑横斩攻击动画中命中，双方相杀 换血 根据防具判定出现何种硬直，重型防具出现小硬直 轻型防具出现大硬直。
+3.直剑跳劈在特大剑横斩攻击攻击时命中，双方弹开 都进入小硬直。
